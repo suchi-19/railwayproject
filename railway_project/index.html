@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway Website Login</title>
+  <link rel="stylesheet" href="styling.css">
+  <style>
+    /* Removed unused style for #content */
+    #lhbcoach img {
+      position: absolute;
+      top: 0;
+      right: 0;  /* Move the image to the right side */
+      height: 100px;
+      width: 150px;
+    }
+
+    #icfcoach img {
+      position: absolute;
+      top: 110;
+      right: 0;  /* Move the image to the right side */
+      height: 60px;
+      width: 150px;
+    }
+    #lhb h6 {
+        position: absolute;
+        top: 17px; 
+        right: 165px; 
+        
+    }
+    #icf h6 {
+        position: absolute;
+        top: 15;
+        right: 165px; 
+        
+    }
+
+    header h1:first-of-type {
+        font-size: 2.5em; 
+    }
+    
+  </style>
+</head>
+<body style="background-image: url(image/vb.jpg); background-size: auto; background-position: center;
+background-repeat: no-repeat;
+background-size: cover;">
+  <header>
+    <img src="image/rail-logo.png" alt="Logo" class="logo">
+    <div id="lhbcoach">
+      <img src="image/lhbcoach.jpg" class="ribbon" alt="Logo"/>
+      <div id="lhb">
+        <h6>LHB</h6>
+      </div>
+    </div>    
+    <div id="icfcoach">
+        <img src="image/icfcoach.jpeg" class="ribbon" alt="Logo" />
+        <div id="icf">
+            <h6>ICF</h6>
+          </div>
+      </div>
+   
+
+    <h1>Coaching Department</h1><br>
+    <h1>South Central Railway Vijayawada Division</h1>
+  </header>
+  <main>
+    <div class="login-container">
+      <div class="image-container">
+        <img src="image/coachdept.jpg" alt="Railway Image">
+      </div>
+      <div class="login-form">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+          <label for="username">Mail:</label>
+          <input type="text" id="email" name="email" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <label for="authority"> Authority:</label>
+          <select id="authority" name="authority" class="input-field" required>
+            <option value="ADMIN">ADMIN</option>
+            <option value="SVDME">SrDME</option>
+            <option value="DME">DME</option>
+            <option value="ADMEI">ADMEI</option>
+            <option value="SSE">SSE</option>
+          </select>
+
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="left">&copy; 2024 South central railways. All rights reserved.</p>
+    <p class="right">Lineysha and Thevan Software Technologies</p>
+  </footer>
+</body>
+</html>
